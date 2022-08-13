@@ -1,0 +1,5 @@
+https://hackthestuff.com/article/laravel-8-user-roles-and-permissions-tutorial
+
+https://github.com/jiteshmeniya/role-permission
+
+https://github.com/toewailin-tb/multi-usr-auth

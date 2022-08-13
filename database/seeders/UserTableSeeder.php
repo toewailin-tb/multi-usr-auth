@@ -3,6 +3,10 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use Spatie\Permission\Models\Role;
+use Spatie\Permission\Models\Permission;
+use App\Models\User;
+use Illuminate\Support\Facades\Hash;
 
 class UserTableSeeder extends Seeder
 {
@@ -23,7 +27,7 @@ class UserTableSeeder extends Seeder
 
         $permission = Permission::pluck('id', 'id')->all();
 
-        $role->syncPermission($permission);
+        $role->syncPermissions($permission);
 
         $user->assignRole([$role->id]);
     }
